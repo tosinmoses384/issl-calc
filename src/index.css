@@ -1,13 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: acumin-pro, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #fff;
+
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  padding-top: 1rem;
+}
+
+.loan-calculator-container {
+  min-height: 70vh;
+
+  border: 1px solid #d5d5d5;
+  font-size: 18px;
+  width: 600px;
+
+  text-align: left;
+}
+
+.form-item {
+  color: #696f73;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+
+  padding: 0.5rem;
+}
+
+.form-item-no {
+  position: relative;
+  align-self: start;
+}
+
+.amount-desc {
+  align-self: start;
+}
+
+.left-1 {
+  margin-left: -2.5rem;
+}
+
+.left-2 {
+  margin-left: -2.4rem;
+}
+
+.left-3 {
+  margin-left: -4.6rem;
+}
+
+.custom-line {
+  position: absolute;
+  height: 68px;
+  width: 0px;
+  bottom: -33px;
+  left: 30px;
+  border: 1px solid #d5d5d5;
+}
+
+.custom-line-1 {
+  position: absolute;
+  height: 69px;
+  width: 0px;
+  bottom: -8px;
+  left: -11px;
+  border: 1px solid #d5d5d5;
+}
+
+.loan-calc-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+
+  padding: 1rem;
+  color: #696f73;
+
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.loan-calc-title-l {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid gray;
+
+  padding: 1rem;
+  color: #696f73;
+}
+
+.loan-amount {
+  color: #696f73;
+
+  font-family: acumin-pro, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #696f73;
+  text-align: left;
+  background-color: #fff;
+}
+
+.format-text {
+  font-family: acumin-pro, sans-serif;
+  font-size: 1rem;
+
+  line-height: 1.5;
+  color: #000;
+}
+.format-text-sm {
+  font-family: acumin-pro, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #000;
+}
+
+.form-action {
+  text-align: center;
+}
+
+.form-btn {
+  text-align: end;
+  padding: 1rem 0;
+  padding-right: 1rem;
+}
+
+.calculate-button {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  padding: 10px 24px 12px 26px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #dd4f05;
+  border-color: #dd4f05;
+
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.calculate-button:hover {
+}
+
+.form-input {
+  position: relative;
+}
+
+.form-input input,
+.form-action input {
+}
+
+.form-input input {
+}
+
+.form-action input {
+}
+
+input[type="text"],
+input[type="email"] {
+  border: 1px solid #ccc;
+
+  padding: 0.5rem 0.7rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+
+  border: 1px solid #ced4da;
+  background: #fff;
+  padding: 12px 14px;
+  outline: 0;
+}
+
+.percent-input {
+  position: absolute;
+  top: 0;
+  left: 153px;
+  padding: 0.8rem 2rem;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #7db0fb;
+  outline: 0;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 5px 0;
 }
