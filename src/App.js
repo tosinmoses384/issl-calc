@@ -1,4 +1,4 @@
-import LoanJS from "loanjs";
+
 import { useState } from "react";
 
 export default function LoanCalculator() {
@@ -63,11 +63,7 @@ export default function LoanCalculator() {
     setTotalInterest(totalInterestRound);
   };
 
-  const amountFormat = (amount) =>
-    new Intl.NumberFormat("en-US", {
-      style: "currency",
-      currency: "USD",
-    }).format(amount);
+ 
 
   return (
     <div className="App">

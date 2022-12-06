@@ -57,11 +57,11 @@ code {
 
 .form-item-no {
   position: relative;
-  align-self: start;
+  align-self: flex-start;
 }
 
 .amount-desc {
-  align-self: start;
+  align-self: flex-start;
 }
 
 .left-1 {
@@ -108,7 +108,7 @@ code {
 
 .loan-calc-title-l {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   border: 1px solid gray;
 
